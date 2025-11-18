@@ -279,7 +279,7 @@
     <div class="modal-content">
       <h2 class="logo" style="font-size:3rem;">LUNA</h2>
       <p style="font-size:1.4rem;margin:20px 0;">Введи свой ключ для скачивания</p>
-      <input type="text" id="downloadKey" placeholder="XXXX-XXXX-XXXX-XXXX" style="text-transform:uppercase;letter-spacing:3px;" />
+      <input type="text" id="downloadKey" placeholder="XXXXX-XXXXX-XXXXX-XXXXX-XXXXX" style="text-transform:uppercase;letter-spacing:3px;" />
       <button class="btn-primary" style="width:100%;margin-top:20px;padding:18px;" onclick="activateKey()">
         <span>АКТИВИРОВАТЬ И СКАЧАТЬ</span>
       </button>
@@ -293,7 +293,7 @@
     });
 
     // Ключи для скачивания (меняй сколько угодно)
-    const validDownloadKeys = ["ZglpwiBS5qMRXPw2Cq2hAyJBr"];
+    const validDownloadKeys = ["F"];
 
     let isLogin = true;
 
@@ -326,7 +326,7 @@
       const password = document.getElementById("password").value;
       const regKey = document.getElementById("regKey").value.trim();
 
-      if (!isLogin && regKey !== "LUNA2025REG") { // ← ключ для регистрации
+      if (!isLogin && regKey !== "Zglpw-iBS5q-MRXPw-2Cq2h-AyJBr") { // ← ключ для регистрации
         Swal.fire({ icon: "error", title: "Неверный ключ регистрации!", background: "#111", color: "#fff" });
         return;
       }
@@ -358,8 +358,8 @@
 
       setTimeout(() => {
         const a = document.createElement("a");
-        a.href = "https://github.com/belufelu/luna/releases/download/cheat/lunav1.1.zip"; // ← ТВОЯ ССЫЛКА
-        a.download = "lunav1.1.zip";
+        a.href = "https://твой-сайт.com/LUNA-latest.exe"; // ← ТВОЯ ССЫЛКА
+        a.download = "LUNA.exe";
         a.click();
       }, 1500);
     }
